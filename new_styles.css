@@ -1,0 +1,138 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E3FEF7;
+}
+
+.top-bar {
+    background-color: #006b56;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar .contact-info span {
+    margin-right: 15px;
+}
+
+.social-icons {
+    /* space for social media icons */
+}
+
+.navbar {
+    background-color: #006b56;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar .nav-links li a.active,
+.navbar .nav-links li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.hero {
+    background-color: #00796b;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #00a86b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-buttons .btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 20px;
+    background-color: #E3FEF7;
+}
+
+.feature-card {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.feature-card h3 {
+    margin-top: 20px;
+}
+
+.feature-card p {
+    text-align: left;
+}
+
+.feature-icon img {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    background-color: #77BBAA;
+    color: #00796b;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
