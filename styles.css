@@ -56,7 +56,7 @@ body {
 .navbar .nav-links li a:hover {
     border-bottom: 2px solid #fff;
 }
-/*  #83c5be */
+
 .hero {
     background-image:url(_5e092a4c-23bb-4618-99dc-3909e1dcd5f0.jpeg);
     color: white;
@@ -141,7 +141,6 @@ footer {
 
 .card1{
     background-color: #9d695ab1;
-    /* opacity: 0.5; */
 }
 
 
