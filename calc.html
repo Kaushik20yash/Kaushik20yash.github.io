@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0_TRACE MINE Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="calcistyle.css">
+    <link rel="icon" href="./0_TraceMine Logo1.png" type="image/x-icon">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- 
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>carbonfree@gmail.com</span>
+                <span>+91 5678943092</span>
+            </div> -->
+            <!-- <div class="social-icons"> -->
+                <!-- space for social media icons
+            </div>
+        </div> 
+    
+    -->
+        <nav class="navbar">
+            <div class="logo">
+                <span class="name" id="heading">0_Trace Mine</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="#">Login/SignUp</a></li>
+                <!-- <li><a href="./calculator.html">Emmision Calculator</a></li> -->
+                <!-- <li><a href="#">Carbon Neutrality</a></li> -->
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <!-- <li><a href="#">Dropdown</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Connect</a>
+    </div>
+
+    <!-- Instructions Section -->
+    <div class="container">
+        <p><strong>Welcome to the 0_Trace Mine Calculator! Follow the steps below to accurately calculate your coal mine's carbon footprint:</strong></p>
+        <ul class="instructions">
+            <li><u>Navigate Through Tabs:</u>
+<br/>
+                The calculator is divided into different sections such as Drilling & Blasting, Excavation, Loading & Hauling, and others.
+                Click on each tab to enter data specific to that process or activity in your coal mine.</li>
+            <!-- <li>To add another instance for the same tab, click on 'Add Another Instance' after saving the current instance.</li> -->
+            <!-- <li>Use 'Go to Next/Previous Tab' to navigate between the tabs.</li> -->
+            
+            <br/><li><u>Fill in the Required Fields:</u><br/>
+
+                For each process, provide data such as fuel consumption in liters, electricity usage in kWh, and other relevant inputs.
+                Enter numeric values only. </li>
+            <br/><li><u>Save Your Data:</u>
+                <br/>After filling out the required fields for each tab, click the "Save" button to store your data.</li>
+        </ul>
+
+        <!-- Tabs Section -->
+        <div class="tabs">
+            <button class="tab-button active" data-tab="Drilling-and-blasting">Drilling and blasting</button>
+            <button class="tab-button" data-tab="Excavation">Excavation</button>
+            <button class="tab-button" data-tab="Loading-and-hauling">Loading and hauling</button>
+            <button class="tab-button" data-tab="Crushing-and-Grinding">Crushing and Grinding</button>
+            <button class="tab-button" data-tab="Screening-and-separation">Screening and separation</button>
+            <button class="tab-button" data-tab="Waste-management">Waste management</button>
+            
+        </div>
+
+        <!-- Tab Content: Fossil Fuel -->
+        <div class="tab-content active" id="Drilling-and-blasting">
+            <form>
+                <div class="form-group">
+                    <label for="Rotary-Drills">Rotary Drills fuel consumed</label>
+                    <input type="number" id="Rotary-Drills" placeholder="litres" name="rotarydrills" min="0"/>
+                </div>
+                <div class="form-group">
+                    <label for="Percussion-Drills">Percussion Drills (DTH) fuel consumed</label>
+                    <input type="number" id="Percussion-Drills" placeholder="litres" name="PercussionDrills" min="0"/>
+                </div>
+                <div class="form-group">
+                    <label for="Explosive-Charging-Trucks">Explosive Charging Trucks fuel consumed</label>
+                    <input type="number" id="Explosive-Charging-Trucks" placeholder="litres" name="ExplosiveChargingTrucks" min="0"/>
+                </div>
+                <div class="form-group">
+                    <label for="Air-Compressors">Air Compressors fuel consumed</label>
+                    <input type="number" id="Air-Compressors" placeholder="litres" name="AirCompressors" min="0"/>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="unit">Unit *</label>
+                    <select id="unit">
+                        <option>Choose Unit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="amount-consumed">Amount Consumed *</label>
+                    <input type="number" id="amount-consumed" placeholder="Enter Amount">
+                </div> -->
+                <button class="btn" type="submit">Save</button>
+            </form>
+        </div>
+
+        <!-- Add other tabs (Fugitive, Electricity, etc.) similar to the Fossil Fuel tab -->
+
+<!-- Tab Content: Excavation -->
+<div class="tab-content" id="Excavation">
+    <form>
+        <div class="form-group">
+            <label for="Hydraulic-Excavator">Hydraulic Excavator fuel consumed</label>
+                    <input type="number" id="Hydraulic-Excavator" placeholder="litres" name="HydraulicExcavator" min="0"/>
+        </div>  
+        <div class="form-group">
+                    <label for="Dragline-Excavator">Dragline Excavator fuel consumed</label>
+                    <input type="number" id="Dragline-Excavator" placeholder="litres" name="DraglineExcavator" min="0"/>
+            
+    </div>
+    <div class="form-group">
+                    <label for="Haul-Truck">Haul Truck fuel consumed</label>
+                    <input type="number" id="Haul-Truck" placeholder="litres" name="HaulTruck" min="0"/>
+    </div>
+                    <!-- <label for="Hydraulic-Excavator">Hydraulic Excavator fuel consumed</label>
+                    <input type="number" id="Hydraulic-Excavator" plcaeholder="litres" name="Hydraulic-Excavator" min="0"/> -->
+        
+        
+        <button class="btn" type="submit">Save</button>
+    </form>
+</div>
+
+<!-- Tab Content: Loading-and-hauling -->
+<div class="tab-content" id="Loading-and-hauling">
+    <form>
+        <div class="form-group">
+            <label for=" Loaders"> Loaders fuel consumed</label>
+                    <input type="number" id="Loaders" placeholder="litres" name="loaders" min="0"/>
+            
+        </div>
+        <div class="form-group">
+            <label for="Haul-Truck">Haul Truck fuel consumed</label>
+                    <input type="number" id="Haul-Truck" placeholder="litres" name="Haultruck" min="0"/>
+        </div>
+        <!-- <div class="form-group">
+            <label for="month">Month *</label>
+            <select id="month">
+                <option>Choose Month</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="fuel-type">Fuel Type *</label>
+            <select id="fuel-type">
+                <option>Choose Fuel Type</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="unit">Unit *</label>
+            <select id="unit">
+                <option>Choose Unit</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="amount-consumed">Amount Consumed *</label>
+            <input type="number" id="amount-consumed" placeholder="Enter Amount">
+        </div> -->
+        <button class="btn" type="submit">Save</button>
+    </form> 
+</div>
+<!-- Tab Content: Crushing-and-Grinding -->
+<div class="tab-content" id="Crushing-and-Grinding">
+    <form>
+        <div class="form-group">
+            <label for="Crushers">Crushers fuel consumed</label>
+                    <input type="number" id="Crushers" placeholder="litres" name="Crushers" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="Mills">Mills fuel consumed</label>
+                    <input type="number" id="Mills" placeholder="litres" name="Mills" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="Screens-Sieves">Screens/Sieves fuel consumed</label>
+                    <input type="number" id="Screens-Sieves" placeholder="litres" name="ScreensSieves" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="Conveyors">Conveyors fuel consumed</label>
+                    <input type="number" id="Conveyors" placeholder="litres" name="Conveyors" min="0"/>
+        </div>
+        <!-- <div class="form-group">
+            <label for="unit">Unit *</label>
+            <select id="unit">
+                <option>Choose Unit</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="amount-consumed">Amount Consumed *</label>
+            <input type="number" id="amount-consumed" placeholder="Enter Amount">
+        </div> -->
+        <button class="btn" type="submit">Save</button>
+    </form>
+</div>
+
+<!-- Tab Content: Screening-and-separation -->
+<div class="tab-content" id="Screening-and-separation">
+    <form>
+        <div class="form-group">
+            <label for="op-screen-elect">Electricity consumed in Operating screens</label>
+                    <input type="number" id="op-screen-elect" placeholder="kW" name="opScreenElect" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="mag-sep-elect">Electricity consumed in Magnetic separation</label>
+                    <input type="number" id="mag-sep-elect" placeholder="kW" name="magSepElect" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="elect-dense-med-sep">Electricity consumed in Dense medium Separation</label>
+                    <input type="number" id="elect-dense-med-sep" placeholder="kW" name="electDenseMedSep" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="elect-coal-washing">Electricity consumed in coal washing</label>
+                    <input type="number" id="elect-coal-washing" placeholder="kW" name="electCoalWashing" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="conveyor-belts">Conveyer Belts fuel consumed</label>
+                    <input type="number" id="conveyor-belts" placeholder="litres" name="conveyorBelts" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="water-sprinkler">Electricity consumed in Water sprinkler operation</label>
+                    <input type="number" id="water-sprinkler" placeholder="kW" name="waterSprinkler" min="0"/>
+        </div>
+        <button class="btn" type="submit">Save</button>
+    </form>
+</div>
+
+<!-- Tab Content: Waste-management -->
+<div class="tab-content" id="Waste-management">
+    <form>
+        <div class="form-group">
+            <label for="Overburdern">Conveyors fuel consumed in Overburdern Removing Machinery</label>
+                    <input type="number" id="Overburdern" placeholder="litres" name="Overburdern" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="pumping-treatment-fuel">fuel consumed in pumping and treatment process</label>
+                    <input type="number" id="pumping-treatment-fuel" placeholder="litres" name="pumpingtreatmentfuel" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="pumping-treatment-elect">Electricity consumed in pumping and treatment process</label>
+                    <input type="number" id="pumping-treatment-elect" placeholder="kW" name="pumping-treatment-elect" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for="waste-transport">fuel consumed in waste transportation</label>
+            <input type="number" id="waste-transport" placeholder="litres" name="wastetransport" min="0"/>
+        </div>
+        <!-- <div class="form-group">
+            <label for="unit">Unit *</label>
+            <select id="unit">
+                <option>Choose Unit</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="amount-consumed">Amount Consumed *</label>
+            <input type="number" id="amount-consumed" placeholder="Enter Amount">
+        </div> -->
+        <button class="btn" type="submit">Save</button>
+    </form>
+</div>
+
+
+
+
+    </div>
+
+
+    <script src="calciscript.js"></script>
+</body>
+</html>

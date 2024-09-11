@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in || Sign up from</title>
-     <!-- font awesome icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sign in || Sign up form</title>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css stylesheet -->
-    <link rel="stylesheet" href="./auth-styles.css">
-</head>
+    <link rel="stylesheet" href="loginstyle.css">
+</head> 
+
 <body>
+
+    <header>
+        <!-- 
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>carbonfree@gmail.com</span>
+                <span>+91 5678943092</span>
+            </div> -->
+            <!-- <div class="social-icons"> -->
+                <!-- space for social media icons
+            </div>
+        </div> 
+    
+    -->
+        <nav class="navbar">
+            <div class="logo">
+                <span class="name" id="heading">CarbonTrack</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html" >Home</a></li>
+                <li><a href="#" class="active">Login/SignUp</a></li>
+                <!-- <li><a href="./calculator.html">Emmision Calculator</a></li> -->
+                <!-- <li><a href="#">Carbon Neutrality</a></li> -->
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <!-- <li><a href="#">Dropdown</a></li> -->
+            </ul>
+        </nav>
+    </header>
     <div class="home-link">
-        <a href="./new_homepage.html">HOME</a>
+        <!-- <a href="home.html">HOME</a> -->
     </div>
-</div>
 
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form id="signup-form" action="#">
                 <h1>Create Account</h1>
-               
                 <div class="infield">
-                    <input type="text" placeholder="Name" name="name"/>
+                    <input type="text" placeholder="Name" name="name" id="signup-name" required />
                     <label></label>
                 </div>
                 <div class="infield">
-                    <input type="email" placeholder="Email" name="email"/>
+                    <input type="email" placeholder="Email" name="email" id="signup-email" required />
                     <label></label>
                 </div>
                 <div class="infield">
-                    <input type="password" placeholder="Password" name="password" />
+                    <input type="password" placeholder="Password" name="password" id="signup-password" required />
                     <label></label>
                 </div>
                 <div class="infield">
-                    <select name="state" >
+                    <select name="state" id="signup-state" required>
                         <option value="" disabled selected hidden>State</option>
                         <option value="odisha">Odisha</option>
                         <option value="jharkhand">Jharkhand</option>
@@ -54,56 +85,34 @@
                     </select>
                     <label></label>
                 </div>
-                <div class="infield">
-                    <select name="mine" >
-                        <option value="" disabled selected hidden>Mine</option>
-                        <option value="odisha">Odisha</option>
-                        <option value="jharkhand">Jharkhand</option>
-                        <option value="chhattisgarh">Chhattisgarh</option>
-                        <option value="west bengal">West Bengal</option>
-                        <option value="madhya pradesh">Madhya Pradesh</option>
-                        <option value="telangana">Telangana</option>
-                        <option value="maharashtra">Maharashtra</option>
-                        <option value="bihar">Bihar</option>
-                        <option value="andhra pradesh">Andhra Pradesh</option>
-                        <option value="uttar pradesh">Uttar Pradesh</option>
-                        <option value="meghalaya">Meghalaya</option>
-                        <option value="assam">Assam</option>
-                        <option value="nagaland">Nagaland</option>
-                        <option value="sikkim">Sikkim</option>
-                        <option value="arunachal pradesh">Arunachal Pradesh</option>
-                    </select>
-                    <label></label>
-                </div>
-
-                <button>Sign Up</button>
+                <button type="submit">Sign Up</button>
             </form>
         </div>
-        <div class="form-container sign-in-container">
-            <form action="#">
-                <h1>Sign in </h1>
-                <br/>
-                <h2>Welcome Back!</h2>
-                <br/>
 
-                
+        <div class="form-container sign-in-container">
+            <form id="signin-form" action="#">
+                <h1>Sign in</h1>
+                <br />
+                <h2>Welcome Back!</h2>
+                <br />
                 <div class="infield">
-                    <input type="email" placeholder="Email" name="email"/>
+                    <input type="email" placeholder="Email" name="email" id="signin-email" required />
                     <label></label>
                 </div>
                 <div class="infield">
-                    <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="Password" id="signin-password" required />
                     <label></label>
                 </div>
                 <a href="#" class="forgot">Forgot your password?</a>
-                <button>Sign In</button>
+                <button type="submit">Sign In</button>
             </form>
         </div>
+
         <div class="overlay-container" id="overlayCon">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
                     <h1>Already a User?</h1>
-                    <p>To keep connected with us please login with your  info</p>
+                    <p>To keep connected with us please login with your info</p>
                     <button>Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
@@ -116,22 +125,93 @@
         </div>
     </div>
 
-    
-    
-    <!-- js code -->
-    <script>
-        const container=document.getElementById('container');
-        const overlayCon=document.getElementById('overlayCon');
-        const overlayBtn=document.getElementById('overlayBtn');
+    <!-- Firebase SDKs -->
+    <script type="module">
+        // Import Firebase libraries
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+        import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
 
-        overlayBtn.addEventListener('click',()=>{
-            container.classList.toggle('right-panel-active');
-            overlayBtn.classList.remove('btnScaled');
-            window.requestAnimationFrame(()=>{
-                overlayBtn.classList.add('btnScaled')
-            })
-        })
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB_UziueyrUAHACN0tgEv5NT6IcuHhFQNk",
+            authDomain: "coal-mine-45edb.firebaseapp.com",
+            projectId: "coal-mine-45edb",
+            storageBucket: "coal-mine-45edb.appspot.com",
+            messagingSenderId: "619232796512",
+            appId: "1:619232796512:web:6b68d0cfbbcbf3b52dc805",
+            measurementId: "G-TFB9WEJ0LW"
+        };
+
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // Sign-Up form handler
+        const signupForm = document.getElementById('signup-form');
+        signupForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+            const name = document.getElementById('signup-name').value;
+            const state = document.getElementById('signup-state').value;
+
+            try {
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+
+                // Store additional user info in Firestore
+                await setDoc(doc(db, 'users', user.uid), {
+                    name: name,
+                    email: email,
+                    state: state,
+                    createdAt: new Date()
+                });
+
+                alert('User signed up successfully');
+            
+            } catch (error) {
+                console.error(error);
+                alert('Error signing up: ' + error.message);
+            }
+        });
+
+        // Sign-In form handler
+        const signinForm = document.getElementById('signin-form');
+        signinForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('signin-email').value;
+            const password = document.getElementById('signin-password').value;
+
+            try {
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                alert('User signed in successfully');
+                window.location.href = 'dashboard.html';
+            } catch (error) {
+                console.error(error);
+                alert('Error signing in: ' + error.message);
+            }
+        });
     </script>
 
+    <!-- Toggle Overlay -->
+    <script>
+        const container = document.getElementById('container');
+        const overlayCon = document.getElementById('overlayCon');
+        const overlayBtn = document.getElementById('overlayBtn');
+
+        overlayBtn.addEventListener('click', () => {
+            container.classList.toggle('right-panel-active');
+            overlayBtn.classList.remove('btnScaled');
+            window.requestAnimationFrame(() => {
+                overlayBtn.classList.add('btnScaled');
+            });
+        });
+    </script>
 </body>
+
 </html>

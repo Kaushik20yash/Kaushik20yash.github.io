@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0_TRACE MINE Neutrality Pathways</title>
+    <link rel="stylesheet" href="neutralstyles.css">
+    <link rel="icon" href="./0_TraceMine Logo1.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- <div class="top-bar">
+            <div class="contact-info">
+                <span>carbonfree@gmail.com</span>
+                <span>+91 5678943092</span>
+            </div>
+            <div class="social-icons">
+                 space for social media icons 
+            </div>
+        </div>
+     -->
+        <nav class="navbar">
+            <div class="logo">
+                <span class="name">0_TRACE MINE</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html" >Home</a></li>
+                <li><a href="./login.html">Login/SignUp</a></li>
+                <li><a href="./calculator.html">Emmision Calculator</a></li>
+                <li><a href="#" class="active">Carbon Neutrality</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <!-- <li><a href="#">Dropdown</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="topic">
+        <div class="ways">CARBON NEUTRALITY PATHWAYS</div>
+        <div class="quote">Embracing neutrality paves the way for progress.</div>
+        <span>Here are some effective methods to neutralize the carbon emissions from your coal mine: </span>
+
+    </section>
+
+    <section class="main-ways">
+        <div class="container">
+            <!-- <h1>Our Science</h1> -->
+            <div class="main">
+                <div class="way1 way">
+                    <!-- <img src="way1.jpg" alt="tree"> -->
+                    <h3>TREE PLANTATION</h3>
+                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem nobis, mollitia autem maxime soluta recusandae.</p> -->
+                    <img src="treeneutral.jpeg" alt="tree" class="wayimg">
+
+                    <label for="tree">Specify the tree you want to plant :
+                    <select name="trees" id="tree" id="cars">
+                        <option value ="" selected disabled hidden >Trees</option>
+                        <option value="Silver Maple">Silver Maple</option>
+                        <option value="Oaktree">Oaktree</option>
+                        <option value="Neem">Neem</option>
+                        <option value="BanyanTree">Banyan Tree</option>
+                        <option value="TamarindTree">Tamarind tree</option>
+                        <option value="coastalShe-oak">coastal she-oak</option>
+                        <option value="IndianBeech">Indian Beech</option>
+                        <option value="Pine Tree">Pine Tree</option>
+                        <option value="Babul">Babul</option>
+                        <option value="Neeli Gulmohar">Neeli Gulmohar</option>
+                        <option value="Redwood">Redwood</option>
+                        <option value="RedMulberryTree">Red Mulberry Tree</option>
+                      </select>
+                    </label>
+                    
+                    <a href="#" class="btn">generate</a>
+
+                    <!-- azadirachta indica local name -> neem (3,289.8 kgC/tree)-->
+                    <!-- Ficus benghalensis local name -> Banyan Tree(2,375.5 kgC/tree) -->
+                    <!-- Tamarindius indica local name -> Tamarind tree(1,666.9 kgC/tree) -->
+                    <!-- Casurina equisetifolia local name -> coastal she-oak(1,530.5kgC/tree) -->
+                    <!-- Pongamia pinnata local name -> Indian Beech (865.9 kgC/tree) -->
+                    <!-- Acacia Tree : babul-->
+                    <!-- Jacaranda Tree : Neeli Gulmohar-->
+                     <!--  -->
+
+
+                    
+                    
+                    <!-- A silver maple tree has the capacity to capture around 25,000 pounds of carbon dioxide over a lifespan of 55 years. -->
+
+
+                    <!-- Casurina equisetifolia local name -> coastal she-oak(1,530.5kgC/tree) -->
+                    
+                    
+                    
+                    <!-- Casurina equisetifolia local name -> coastal she-oak(1,530.5kgC/tree) -->
+                    <!-- Casurina equisetifolia local name -> coastal she-oak(1,530.5kgC/tree) -->
+               
+               
+               
+                    
+                </div>
+                <div class="way3 way">
+                    
+                    
+                    <div class="emission">
+                        <label for="emValue"> 
+                            <div class="emContent">CARBON EMISSIONS</div>
+                            
+                            <img src="./imgemmision.jpg" alt="electric">
+                            <input type="number" autofocus placeholder="Enter your carbon emissions" name="emissionVal" id="emValue" min="0"/>
+                    </label>
+                    </div>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eos nobis dolore quae perspiciatis voluptatum.</p> -->
+                    <!-- <a href="#" class="btn">generate</a> -->
+                </div>
+                <div class="way2 way">
+                    <!-- <img src="way2.jpg" alt="solar"> -->
+                    <h3>SOLAR PANELS</h3>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sapiente, illum dignissimos omnis animi ullam.</p> -->
+                    <label for="peakHours">
+                    Solar Hours Per Day :
+                    <input type="number" id="peakHours" name="peak_hours" placeholder="Hours" min="0" max="24"/> 
+                </label>
+
+
+                    <label for="billOffset">Bill Offset Percentage :
+
+                    <!-- <output id="billValue">0</output>
+
+                    <input id="billOffset" type="range" name="bill_offset_precentage" min="1" max="100" oninput="this.previousElementSibling.value=this.value" value="80"/> -->
+
+                    <input id="billOffset" type="number" name="bill_offset_precentage" min="0" max="100" placeholder="Percentage"/>
+
+
+                    </label>
+
+                    
+                    <label for="envfactor">Environmental Factor :
+                    <!-- <output id="envValue">0</output>
+
+                    <input type="range" id="envfactor" name="environmental_factor" min="0" max="100" oninput="this.previousElementSibling.value=this.value" value="80"/> -->
+
+
+                    <input id="envfactor" type="number" name="environmental_factor" min="0" max="100" placeholder="Percentage"/>
+
+                    </label>
+
+                    <label for="opPerPanel"> Power Output Per Panel :
+                    <input type="number" id="opPerPanel" name="each_panel_output" placeholder="Watt" min="0"/>
+                    </label>
+
+                    <label for="areaEachPanel">Area Of Each Panel :
+                    <input type="number" id="areaEachPanel" name="area_panel" placeholder="Metre Square" min="0"/>
+                    </label>
+
+                    <a href="#" class="btn">generate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--additional ways Section -->
+    <section class="additional-ways">
+        <div class="container">
+            <h2>Other Methods for Neutralizing</h2>
+            <div class="additional">
+                <div class="add1 add">
+                    <!-- <div class="icon"><img src="icon1.png" alt=""></div> -->
+                    <h3>Carbon capture and storage (CCS)</h3>
+                    <ol>
+                        <li>Carbon capture and storage (CCS) is a process in which carbon dioxide (CO2) is separated from other gases generated during mining activities.
+                            <!-- <h4>Capturing:</h4>
+                            <p>CO2 is separated from other gases at the source of emissions. 
+                            </p> -->
+                        </li>
+                        <li> Subsequently, the captured CO2 is compressed and conveyed through pipelines, road transport, or ships to be injected into deep underground rock formations, such as depleted oil and gas reservoirs or saline aquifers.
+                            <!-- <h4>Transporting: </h4>
+                            <p>CO2 is compressed and transported by ship, pipeline, or road. 
+                            </p> -->
+                        </li>
+                        <li>Furthermore, there exists a related concept known as CCUS,Carbon Capture Utilisation and Storage. In which, rather than simply storing CO2, it can be repurposed within industrial processes by transforming it into various products, such as plastics, concrete, or biofuels.</li>
+                        <!-- <li>If it is stored, then the CO2
+                            is isolated from drinking
+                           water supplies and prevented from release into the atmosphere
+                           by a confining zone that includes a dense layer of rock, which acts as a seal ,and through additional trapping mechanisms.
+                    </li>
+                         -->
+                    </ol>
+                </div>
+                <div class="add2 add">
+                    <!-- <div class="icon"><img src="icon2.png" alt=""></div> -->
+                    <h3>Advanced mining techniques</h3>
+                    <ol>
+                        <li>Switching to electric mining machinery like shovels, drills, and excavators powered by renewable energy sources significantly reduces greenhouse gas emissions and improves air quality within the mine.</li>
+                        <li>integration of technologies such as high-precision excavation and automated systems presents opportunities to minimize disruption and energy usage. </li>
+                        <li> implementation of precise blasting techniques can efficiently fragment rock, thereby reducing the energy required for excavation and transportation. 
+                        </li>
+                        
+                    </ol>
+                </div>
+                <div class="add3 add">
+                    <!-- <div class="icon"><img src="icon3.png" alt=""></div> -->
+                    <h3>Mine Reclamation
+                        </h3>
+                        <!-- Reclamation includes the following steps: contouring of land; placement of topsoil or an approved substitute on the graded area; reseeding with native vegetation, crops and/or trees; and years of careful monitoring to assure success. -->
+                    <ol>
+                        <li>Contouring of Land :Contouring is the stage in which the mined land is reshaped to resemble pre-mining topography and drainage.This is done by filling the excavation with rocky material. </li>
+                            <li>Layering of Soil: placement of topsoil ,that was stored before mining, or an approved substitute on the graded area </li>
+                             
+                            <li>Reseeding: The area is reseeded with native vegetation, crops, or trees.</li> 
+                             
+                            <li>Monitoring: The area is carefully monitored for years.</li>
+                            <li>Revegetating and Reclaiming the disturbed land after mining helps in restoring ecosystems and potentially absorbing carbon dioxide through plant growth.</li>
+                    </ol>
+                </div>
+                <!-- <div class="add3 add">
+                    <div class="icon"><img src="icon3.png" alt=""></div>
+                    <h3>Electrifying mines</h3>
+                    <ol>
+                        <li>The electrification of mining equipment presents a valuable opportunity to reduce costs and environmental impact, while facilitating the industry's transition towards sustainability. </li>
+                        <li>  Electric equipment offers numerous advantages over conventional counterparts, including enhanced operational efficiency, decreased downtime, and improved capabilities for material transportation on steep inclines.</li>
+                        <li>Notably, a fully electrified mine could potentially achieve emissions reductions of up to 80 percent compared to traditional mining operations.</li>
+                    </ol>
+                </div> -->
+                <!-- <div class="add4 add">
+                    <div class="icon"><img src="icon4.png" alt=""></div>
+                    <h3>waste mangement</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="add5 add">
+                    <div class="icon"><img src="icon5.png" alt=""></div>
+                    <h3>other method</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="add6 add">
+                    <div class="icon"><img src="icon6.png" alt=""></div>
+                    <h3>other method 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+<!-- 
+    
+    <section class="testimonial">
+        <div class="container">
+            <h2>Testimonial</h2>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <img src="user1.jpg" alt="Maria Aime">
+                    <p>“This program has brought positive changes in my child's learning. I highly recommend it to other parents.”</p>
+                    <h4>Maria Aime</h4>
+                    <span>Mother</span>
+                </div>
+                <div class="testimonial-card">
+                    <img src="user2.jpg" alt="Julia Khales">
+                    <p>“It offers such enriching experiences that my child looks forward to every session!”</p>
+                    <h4>Julia Khales</h4>
+                    <span>Wellness Coach</span>
+                </div>
+            </div>
+        </div>
+    </section> 
+-->
+ 
+<footer id="about-us">
+    <p>About Us</p>
+    <div class="aboutData">
+    <div class="member">
+        <div class="name">Sahil Agrawal</div>
+        <div class="git">https://github.com/Sahil88820</div>
+        <div class="link">https://www.linkedin.com/in/sahil-agrawal-046a38296/</div>
+    </div>
+    <div class="member">
+        <div class="name">Akanxi Kushwaha</div>
+        
+        <div class="git">https://github.com/akanxikushwaha</div>
+        <div class="link">https://in.linkedin.com/in/akanxikushwaha</div>
+    </div>
+    <div class="member">
+        <div class="name">Manmeet Kaur</div>
+        
+        <div class="git">https://github.com/ManmeetKaur-28</div>
+        <div class="link">https://www.linkedin.com/in/manmeet-kaur-75aa55297/</div>
+    </div>
+    <div class="member">
+        <div class="name">Yash Kaushik</div>
+        
+        <div class="git">https://github.com/Kaushik20yash</div>
+        <div class="link">https://www.linkedin.com/in/yashkaushik03/</div>
+    </div>
+    <div class="member">
+        <div class="name">Atharva Gupta</div>
+        
+        <div class="git">git</div>
+        <div class="link">linkedin</div>
+    </div>
+    <div class="member">
+        <div class="name">Chhavi Gautam</div>
+        
+        <div class="git">https://github.com/Chhaviigautam</div>
+        <div class="link">linkedin</div>
+
+    </div>
+</div>
+</footer>
+
+
+
+    <script src="neutralscript.js"></script>
+</body>
+</html>
+
+
+<!-- header
+neutrality ways
+more ways to neutralize -->
